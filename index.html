@@ -392,8 +392,18 @@ section{position:relative;z-index:1;}
 .photo-fallback{width:100%;height:100%;background:linear-gradient(160deg,rgba(232,165,152,.18) 0%,rgba(196,181,212,.15) 50%,rgba(168,197,181,.12) 100%);
   display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;
   font-size:6rem;font-weight:300;color:rgba(232,165,152,.5);}
-.author-photo-overlay{position:absolute;bottom:0;left:0;right:0;
-  background:linear-gradient(to top,rgba(14,15,21,.85) 0%,transparent 50%);padding:1.5rem;}
+.author-photo-overlay{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  background:linear-gradient(
+    to top,
+    rgba(14,15,21,0.95) 0%,
+    rgba(14,15,21,0.70) 35%,
+    rgba(14,15,21,0.20) 70%,
+    transparent 100%
+  );
+  padding:2rem 1.5rem 1.5rem;
+}
 [data-theme="light"] .author-photo-overlay{background:linear-gradient(to top,rgba(26,20,14,.75) 0%,transparent 50%);}
 .author-name{font-size:1rem;font-weight:600;color:#fff;margin-bottom:.18rem;}
 .author-role{font-size:.72rem;color:rgba(255,255,255,.65);letter-spacing:.03em;}
